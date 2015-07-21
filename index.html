@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>React</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        #contentbg{
+            background-image: url("http://www.ixtendo.com/wp-content/uploads/2012/02/photodune-5168723-working-desk-m.jpg");
+         background-color: #000;
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         height:520px;
+         opacity: 0.7;
+         margin:0;
+         padding:0;
+         z-index: -1;
+        }
+
+        #maincontent h1,h2,h3,h6{
+            text-shadow:0 2px 1px rgba(0, 0, 0, 0.8);
+            color:#fff;
+            text-align: center;
+            z-index: 1;
+        }
+
+        #maincontent h6{
+            color:#000000;
+            text-shadow:0 2px 2px rgba(255,255, 255, 0.7);
+            background-color:rgba(255,255,255,.8);
+            padding:7px;
+            margin:0px 40px;
+        }
+        #maincontent h1{
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        #maincontent{
+           padding:20% 0;
+        }
+        #header h4{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" id="one" data-title="Home" data-transition="pop" >
+        <div data-role="header" id="header">
+            <h4>Herodney Designs</h4>
+
+        </div>
+            <div class="ui-content" id="contentbg">
+
+                    <div id="maincontent">
+
+                        <h3>-YOUR FIRST CHOICE FOR-</h3>
+                        <h1>WEB & GRAPHIC DESIGN</h1>
+                        <h6>"Think outside the box and you will discover new boxes. Then build a box fort." <i>Herodney Emile</i></h6>
+                    </div>
+
+            </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#two" class="ui-icon-info ui-btn-icon-top" data-transition="pop">About</a></li>
+                    <li><a href="#one" class="ui-icon-home ui-btn-icon-top" data-transition="pop">Home</a></li>
+                    <li><a href="#three" class="ui-icon-phone ui-btn-icon-top" data-transition="pop">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--end of page one-->
+    <div data-role="page" id="two" data-title="About" data-transition="pop">
+        <div data-role="header" id="header">
+            <h4>About Herodney Designs</h4>
+        </div>
+        <div class="ui-content">
+            <p>I was born in 1987, raised up by two loving parents in the city of miami.</p>
+            <p>Received my Associates in Arts degree at Miami Dade College in 2013  </p>
+            <p>Received my Bachelors in Arts degree at Miami International University in 2015</p>
+            <p>Owner and developer of two apps React and TAO</p>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#two" class="ui-icon-info ui-btn-icon-top" data-transition="pop">About</a></li>
+                    <li><a href="#one" class="ui-icon-home ui-btn-icon-top" data-transition="pop">Home</a></li>
+                    <li><a href="#three" class="ui-icon-phone ui-btn-icon-top" data-transition="pop">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--end of page two-->
+    <div data-role="page" id="three">
+        <div data-role="header" id="header">
+            <h4>Contact Herodney Designs</h4>
+        </div>
+        <div class="ui-content" >
+            <ul data-role="listview">
+                <li><b>Phone:</b> 786-718-4545</li>
+                <li><b>Email:</b> Herodneydesigns@gmail.com</li>
+                <li><b>Facebook:</b> Herodneydesigns</li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#two" class="ui-icon-info ui-btn-icon-top" data-transition="pop">About</a></li>
+                    <li><a href="#one" class="ui-icon-home ui-btn-icon-top" data-transition="pop">Home</a></li>
+                    <li><a href="#three" class="ui-icon-phone ui-btn-icon-top" data-transition="pop">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--end of page three-->
+</body>
+</html>
